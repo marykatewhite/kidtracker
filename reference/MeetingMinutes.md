@@ -53,3 +53,14 @@ The transfer log table will store information about any changes to the student t
 2. a student ID (which student was changed)
 3. a teacher ID (who received the student)
 *Changes made to an entire class at one time will log each student individually
+4. CreatedAt (time transfer was made)
+
+
+## Routes
+We also established that we will need the following api routes:
+
+1. GET list of all students assigned to the user
+2. GET list of all teachers (from teachers database)
+3. GET all data for a particular student
+4. PUT a new status and/or location into student database
+5. POST changes to transfer log table
