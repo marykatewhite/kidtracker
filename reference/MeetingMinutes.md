@@ -6,6 +6,10 @@ We met and mocked up the layouts for our 3 basic pages:
 ### The login page
 The login/splash page (just a logo, email and password inputs and a submit button)
 
+### Components
+Logo component
+Login component
+
 ![Mockup of login](./mockuplogin.jpg)
 
 
@@ -14,7 +18,14 @@ where the teacher/user can change the status of the whole class or an individual
 
 There will also be a chat window kinda thing on the left (using socket.io) for real-time communication between teachers. We hope to be able to send prompts in the chat, to which teachers can click "yes" or "no".
 
+### Components
+Navbar component
+Class component
+Student component
+Chat (socket.io) component
+
 ![Mockup of class page](./mockupclass.jpg)
+
 
 
 ### The student page
@@ -27,6 +38,11 @@ where the teacher/user can view the following data about that student from the s
  6. medical/dietary/behavioral info
  7. the teacher currently responsible for that student (from teacher table)
  8. student's current location
+
+### Components
+Navbar component
+Chat (socket.io) component
+Student component
 
 ![Mockup of student](./mockupstudent.jpg)
 
