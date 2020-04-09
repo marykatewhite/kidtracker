@@ -64,3 +64,11 @@ We also established that we will need the following api routes:
 3. GET all data for a particular student
 4. PUT a new status and/or location into student database
 5. POST changes to transfer log table
+
+#Components
+Logo
+Login
+Navbar 
+Teacher (Teacher)
+Student (Student card)
+
