@@ -1,17 +1,17 @@
 [
-    {
-        "caregiverlastname": "Sims",
-        "caregiverfirstname": "John",
-        "caregiverlocation": "Red Room"
-    },
-    {
-        "caregiverlastname": "White",
-        "caregiverfirstname": "Mary Kate",
-        "caregiverlocation": "Yellow Room"
-    },
-    {
-        "caregiverlastname": "Zsadov",
-        "caregiverfirstname": "Zach",
-        "caregiverlocation": "Green Room"
-    }
+	{
+		"caregiverlastname": "Sims",
+		"caregiverfirstname": "John",
+		"caregiverlocation": "Red Room"
+	}
+	{
+	    "caregiverlastname": "White",
+	    "caregiverfirstname": "Mary Kate",
+	    "caregiverlocation": "Yellow Room"
+	},
+	{
+	    "caregiverlastname": "Zsadov",
+	    "caregiverfirstname": "Zach",
+	    "caregiverlocation": "Green Room"
+	}
 ]
