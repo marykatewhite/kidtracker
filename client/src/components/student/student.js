@@ -1,18 +1,22 @@
 import React from "react";
 
-const styles = {};
-
-function StudentCardComponent() {
+function StudentCardComponent({ studentName }) {
 	return (
-		<div class='row'>
-			<div class='col s12 m7'>
-				<div class='card'>
-					<div class='card-image'>
-						<img src='images/sample-1.jpg' />
-						<span class='card-title'>Card Title</span>
+		<div className='row'>
+			<div className='col s12 m7'>
+				<div className='card'>
+					<div className='card-image'>
+						<img source={{
+                            'https://via.placeholder.com/150'}}/>
+						<span className='card-title'>{studentName}</span>
 					</div>
-					<div class='card-content'>
-						<p></p>
+					<div className='card-content'>
+						<ul>
+							<li>D.O.B</li>
+							<li>Allergies</li>
+							<li>Parents</li>
+							<li>Parent phone</li>
+						</ul>
 					</div>
 				</div>
 			</div>
