@@ -1,15 +1,13 @@
 import React from "react";
-
-const styles = {};
+import "./navbar.css";
 
 function Navbar() {
   return (
     <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo center">
-          Logo
-        </a>
-      </div>
+        <div className="nav-wrapper">
+            <img src="./branding/rollcalllogohorizontal.png" alt="Roll Call"
+                    id="navlogo"></img>
+        </div>
     </nav>
   );
 }
