@@ -1,7 +1,5 @@
 import React from "react";
 
-const styles = {};
-
 function ClassList() {
 	return (
 		<ul class='collection with-header'>
