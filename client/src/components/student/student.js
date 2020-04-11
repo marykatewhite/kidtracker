@@ -6,8 +6,7 @@ function StudentCardComponent({ studentName }) {
 			<div className='col s12 m7'>
 				<div className='card'>
 					<div className='card-image'>
-						<img source={{
-                            'https://via.placeholder.com/150'}}/>
+						{/* <img uri={{'https://via.placeholder.com/150'}}/> */}
 						<span className='card-title'>{studentName}</span>
 					</div>
 					<div className='card-content'>
