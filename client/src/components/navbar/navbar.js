@@ -9,11 +9,7 @@ function Navbar() {
 					src='./branding/rollcalllogohorizontal.png'
 					alt='Roll Call'
 					id='navlogo'
-<<<<<<< HEAD
-				></img>
-=======
 				/>
->>>>>>> Develop
 			</div>
 		</nav>
 	);
