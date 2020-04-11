@@ -1,9 +1,14 @@
 import React from "react";
-
-const styles = {};
+import "./logo.css";
 
 function Logo() {
-    return ();
+    return (
+        <div className="row">
+            <div className="col 12">
+                <img src="reference/branding/rollcalllogosquare.png" alt="Roll Call logo"></img>
+            </div>
+        </div>
+    );
 }
 
 export default Logo;
