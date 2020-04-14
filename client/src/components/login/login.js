@@ -1,6 +1,7 @@
 import React from "react";
 
 function Login() {
+
   return (
     <div className="row">
       <form className="col s12 offset-s3">
@@ -30,6 +31,7 @@ function Login() {
       </form>
     </div>
   );
+
 }
 
 export default Login;
