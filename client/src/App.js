@@ -15,7 +15,7 @@ class App extends Component {
 				{" "}
 				{/* <div>{<Navbar />}</div> */}
 				<div>{<Logo />}</div>
-				<div>{<ClassList />}</div>
+				<div>{<ClassList teacherName='Mr.Simm' />}</div>
 				<div>{<StudentProfile />}</div>
 				<div>{<Login />}</div>{" "}
 			</>
