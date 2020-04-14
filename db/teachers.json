@@ -2,16 +2,22 @@
 	{
 		"caregiverlastname": "Sims",
 		"caregiverfirstname": "John",
-		"caregiverlocation": "Red Room"
+		"caregiverlocation": "Red Room",
+		"caregiveremail": "josi3006@hotmail.com",
+		"caregiverpassword": "pswd123"
 	}
 	{
 	    "caregiverlastname": "White",
 	    "caregiverfirstname": "Mary Kate",
-	    "caregiverlocation": "Yellow Room"
+		"caregiverlocation": "Yellow Room",
+		"caregiveremail": "mkUltra@email.com",
+		"caregiverpassword": "pswd456"
 	},
 	{
 	    "caregiverlastname": "Zsadov",
 	    "caregiverfirstname": "Zach",
-	    "caregiverlocation": "Green Room"
+		"caregiverlocation": "Green Room",
+		"caregiveremail": "zach@email.com",
+		"caregiverpassword": "pswd789"
 	}
 ]
