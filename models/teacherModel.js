@@ -16,6 +16,17 @@ const TeacherSchema = new Schema({
 
   classroom: {
     trim: true,
+  },
+
+  teacheremail: {
+    type: String,
+    match: [/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/, "Your email is your username.  Required."],  
+
+  },
+
+  teacherpassword: {
+    type: String,
+    required: true
   }
 
 
