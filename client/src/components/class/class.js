@@ -1,15 +1,21 @@
 import React from "react";
 
-function classList({ teacherName }) {
+import "./class.css";
+
+function ClassList({ teacherName }) {
 	return (
 		<>
-			<div class='card blue-grey darken-1'>
-				<div class='card-content white-text'>
-					<span class='card-title'>{teacherName}'s Class</span>
+			<div className='col s12 m7' id='classComponent'>
+				<div className='row'>
+					<div className='col s10'>
+						<h4 className='header' id='classNamecomptitle'>
+							{teacherName}'s class
+						</h4>
+					</div>
 				</div>
 			</div>
 		</>
 	);
 }
 
-export default classList;
+export default ClassList;
