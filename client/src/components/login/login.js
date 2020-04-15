@@ -1,4 +1,6 @@
 import React from "react";
+import "./login.css";
+import M from 'materialize-css';
 
 function Login() {
 
@@ -7,14 +9,14 @@ function Login() {
       <form className="col s12 offset-s3">
         <div className="row">
           <div className="input-field col s6">
-            <input id="email" type="email" className="validate" />
             <label for="email">Email</label>
+            <input id="email" type="email" className="validate" />
           </div>
         </div>
         <div className="row">
           <div className="input-field col s6">
-            <input id="password" type="password" className="validate" />
             <label for="password">Password</label>
+            <input id="password" type="password" className="validate" />
           </div>
         </div>
         <div className="row">
