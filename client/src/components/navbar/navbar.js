@@ -6,7 +6,7 @@ function Navbar() {
 		<nav>
 			<div className='nav-wrapper'>
 				<img
-					src='./branding/rollcalllogohorizontal.png'
+					src='/rollcalllogohorizontal.png'
 					alt='Roll Call'
 					id='navlogo'
 				/>
