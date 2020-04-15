@@ -1,11 +1,11 @@
 import React from "react";
-// import "./logo.css";
+import "./logo.css";
 
 function Logo() {
 	return (
 		<div className='row'>
-			<div className='col 12'>
-				<img src='./logo/rollcalllosquare.png' alt='Roll Call logo' />
+			<div className='col 12 center'>
+				<img src='/rollcalllogosquare.png' alt='Roll Call logo' id='squarelogo' />
 			</div>
 		</div>
 	);
