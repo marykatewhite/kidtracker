@@ -1,24 +1,5 @@
-nav {
-<<<<<<< HEAD
-	background-image: url("./branding/blackboardbg.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: top;
-	text-align: center;
-	height: auto;
-}
-
-#navlogo {
-	align-content: center;
-	width: 80%;
-	height: auto;
-	align-content: center;
-	padding-top: 40px;
-	padding-bottom: 20px;
-}
-=======
-  background-image: url("./branding/blackboardbg.jpg");
+#nav {
+  background-image: url("/blackboardbg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -34,5 +15,4 @@ nav {
   align-content: center;
   padding-top: 40px;
   padding-bottom: 20px;
-};
->>>>>>> Develop
+}

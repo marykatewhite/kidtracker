@@ -1,15 +1,33 @@
 import React from "react";
 
-function classList({ teacherName }) {
+import "./class.css";
+
+function classNameList({ teacherName }) {
 	return (
 		<>
-			<div class='card blue-grey darken-1'>
-				<div class='card-content white-text'>
-					<span class='card-title'>{teacherName}'s Class</span>
+			<div className='col s12 m7' id='classComponent'>
+				<div className='row'>
+					<div className='col s10'>
+						<h4 className='header' id='classNamecomptitle'>
+							{teacherName}'s class
+						</h4>
+					</div>
+					<div className='col s2'>
+						<h4>
+							<a
+								href='#'
+								data-target='slide-out'
+								className='sidenav-trigger btn-floating btn-large waves-effect waves-dark btn grey'
+							>
+								<i className='material-icons left'>chat</i>Send
+							</a>
+						</h4>
+					</div>
 				</div>
 			</div>
+			;
 		</>
 	);
 }
 
-export default classList;
+export default classNameList;
