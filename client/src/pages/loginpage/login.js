@@ -8,13 +8,6 @@ function LoginPage() {
 		<>
 			<div className='row'>
 				<div className='col s12'>
-					<div id='logo'>
-						<img
-							src='./branding/rollcalllogosquare.png'
-							alt='Roll Call'
-							id='squarelogo'
-						/>
-					</div>
 					<Login />
 				</div>
 			</div>
