@@ -1,0 +1,42 @@
+#sidebarImg {
+	color: ;
+}
+
+.input-field {
+	padding: 30px;
+}
+
+.user-view {
+	background-color: #336633;
+}
+
+#classComponent {
+	padding: 40px;
+}
+
+#studentCollection {
+	background: white;
+}
+
+.studentComponent {
+	font-size: 2rem;
+}
+
+.viewStudentBtn {
+	font-size: 18px;
+	align-content: right;
+}
+
+.sendStudentBtn {
+	font-size: 18px;
+	align-content: right;
+}
+
+#chatwindow {
+	border-color: black;
+	border-width: 2px;
+}
+
+.sidenav {
+	background-color: #ffffcc;
+}
