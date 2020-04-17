@@ -17,14 +17,9 @@ app.get("*", function (req, res) {
 	res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-<<<<<<< HEAD
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.listen(PORT, function() {
-  console.log(`🌎 ==> API server now on port ${PORT}!`);
-=======
 app.listen(PORT, function () {
 	console.log(`🌎 ==> API server now on port ${PORT}!`);
->>>>>>> Develop
 });
