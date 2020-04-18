@@ -5,15 +5,42 @@ import "./studentList.css";
 function StudentList({ studentName }) {
 	return (
 		<>
-			<ul className='collection with-header' id='studentCollection'>
-				<li className='collection-header'>
-					<h4>Students</h4>
+			<ul className='collection with-header'>
+				<li className='collection-header transparent z-depth-0'>
+					<h4 className='studentheader'>Students</h4>
 				</li>
-				<div className='row'>
-					<li className='collection-item s12 studentComponent'>
-						<div className='col s6'>Alvin</div>
-					</li>
-				</div>
+				<li className='collection-item transparent z-depth-0'>
+					<div className='studentname'>
+						Alvin
+						<a href='#!' className='secondary-content'>
+							<i className='material-icons icon-creamyyy'>more</i>
+						</a>
+					</div>
+				</li>
+				<li className='collection-item transparent z-depth-0'>
+					<div className='studentname'>
+						Alvin
+						<a href='#!' className='secondary-content'>
+							<i className='material-icons icon-creamyyy'>more</i>
+						</a>
+					</div>
+				</li>
+				<li className='collection-item transparent z-depth-0'>
+					<div className='studentname'>
+						Alvin
+						<a href='#!' className='secondary-content'>
+							<i className='material-icons icon-creamyyy'>more</i>
+						</a>
+					</div>
+				</li>
+				<li className='collection-item transparent z-depth-0'>
+					<div className='studentname'>
+						Alvin
+						<a href='#!' className='secondary-content'>
+							<i className='material-icons icon-creamyyy'>more</i>
+						</a>
+					</div>
+				</li>
 			</ul>
 		</>
 	);
