@@ -4,6 +4,10 @@ import React from "react";
 
 function Chat() {
 
+
+
+
+
         return (
 
             <div>
@@ -15,8 +19,11 @@ function Chat() {
                     type="text"
                     placeholder="Enter message here"
                     autocomplete="off" />
-                    <button>Send</button>
+                    <button type="submit">Send</button>
                 </form>
+
+
+               
 
             </div>
         );
