@@ -1,18 +1,17 @@
-#nav {
-  background-image: url("/blackboardbg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top;
-  text-align: center;
-  height: auto;
+.nav {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top;
+	text-align: center;
+	height: auto;
 }
 
-#navlogo {
-  align-content: center;
-  width: 80%;
-  height: auto;
-  align-content: center;
-  padding-top: 40px;
-  padding-bottom: 20px;
+.navlogo {
+	align-content: center;
+	width: 80%;
+	height: auto;
+	align-content: center;
+	padding-top: 40px;
+	padding-bottom: 20px;
 }

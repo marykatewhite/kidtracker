@@ -1,11 +1,6 @@
 import React from "react";
 
-// const styles = {};
-
 function Chat() {
-
-
-
 
 
         return (
@@ -31,3 +26,5 @@ function Chat() {
     }
 
     export default Chat;
+
+
