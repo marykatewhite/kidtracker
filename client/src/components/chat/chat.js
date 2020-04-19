@@ -1,49 +1,56 @@
 import React from "react";
+import "./style.css";
 
-function Chat() {
-	return (
-		<div className='container'>
-			<div className='chat-container'>
-				<header className='chat-header'>
-					<strong> Chat Box</strong>
-					{/* <a href="index.html" className="btn">Leave Room</a> */}
-				</header>
-				<main className='chat-main'>
-					<div className='chat-sidebar'>
-						{/* <h3><i className="fas fa-comments"></i> Room Name:</h3>
-                        <h2 id="room-name"></h2> */}
-						<strong>Users</strong>
-						<ul id='users'></ul>
-					</div>
-					<div className='chat-messages'></div>
-				</main>
-				<div className='chat-form-container'>
-					<form id='chat-form'>
-						{/* <input
-                            id="toUser"
-                            type="text"
-                            placeholder="recipient"
-                            required
-                            autocomplete="off"
-                        /> */}
-						<input
-							id='msg'
-							type='text'
-							placeholder='Enter Message'
-							required
-							autocomplete='off'
-						/>
-						<button className='btn'>
-							<i className='fas fa-paper-plane'></i> Send
-						</button>
-					</form>
-				</div>
-			</div>
 
-			<script src='/socket.io/socket.io.js'></script>
-			<script src='./main.js'></script>
-		</div>
-	);
+
+function Chat({ teacherName }) {
+
+    return (
+
+        <div className="chattydiv">
+
+            <div className="row">
+                <div className="col s4">
+
+                    <div className="card transparent z-depth-0">
+
+                        <div class="card-content white-text">
+                            <span class="card-title" id="userName">{ teacherName }</span>
+
+
+                            <form action="">
+                                <span id="nm">testuser</span>
+                                <input id="m"
+                                    type="text"
+                                    placeholder="Enter message here"
+                                    autocomplete="off"
+                                    className="input-field white-text" />
+                                <button type="submit" className='btn waves-effect waves-light'>Send</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className="col s8">
+                    <div className="card transparent z-depth-0">
+
+                        <div class="card-content white-text">
+                            <span class="card-title">Messages</span>
+
+                            <ul id="messages" className="messages"></ul>
+                        </div></div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    );
+
 }
 
 export default Chat;
+
+
