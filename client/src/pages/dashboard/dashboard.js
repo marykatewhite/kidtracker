@@ -20,7 +20,7 @@ function DashboardPage() {
 					</div>
 					<div className=''>
 						<div className='col s12 '>
-							<Chat />
+							<Chat teacherName="Mr.Butt" />
 						</div>
 					</div>
 				</div>

@@ -18,7 +18,7 @@ app.get("*", function (req, res) {
 
 
 io.on('connection', (socket) => {
-	console.log('Socket Connected.  All systems go.');
+	console.log(socket.id, 'is connected');
 
 	socket.on('disconnect', () => {
 		console.log('A user disconnected');
@@ -26,27 +26,9 @@ io.on('connection', (socket) => {
 
 
 	socket.on('chat message', (msg) => {
-		console.log('message: ' + msg);
-		io.emit('chat message', msg);
+		console.log(socket.id, 'says', msg);
+		io.emit('chat message', msg, socket.id);
 	  });
-
-
-
-
-// //   Listen for chatMessage
-//   socket.on('chatMessage', msg => {
-//     const user = getCurrentUser(socket.id);
-
-//     io.to(user.room).emit('message', formatMessage(user.username, msg));
-//   });
-
-
-
-
-
-
-
-
 
 
 });
