@@ -3,7 +3,7 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const server = require('http').createServer(app);
-var io = require('socket.io')(http);
+var io = require('socket.io')(server);
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -17,9 +17,39 @@ app.get("*", function (req, res) {
 });
 
 
-io.on('connection', function (socket) {
+io.on('connection', (socket) => {
 	console.log('Socket Connected.  All systems go.');
-  });
+
+	socket.on('disconnect', () => {
+		console.log('A user disconnected');
+	});
+
+
+	socket.on('chat message', (msg) => {
+		console.log('message: ' + msg);
+		io.emit('chat message', msg);
+	  });
+
+
+
+
+// //   Listen for chatMessage
+//   socket.on('chatMessage', msg => {
+//     const user = getCurrentUser(socket.id);
+
+//     io.to(user.room).emit('message', formatMessage(user.username, msg));
+//   });
+
+
+
+
+
+
+
+
+
+
+});
 
 
 server.listen(PORT, function () {
