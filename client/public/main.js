@@ -1,6 +1,4 @@
-const moment = require('moment');
 
-var time = moment().format('h:mm a')
 
 
 $(function () {
@@ -12,11 +10,15 @@ $(function () {
     return false;
   });
 
-  socket.on('chat message', function (msg) {
+  socket.on('chat message', function (msg, time) {
 
-    $('#messages').prepend($('<li>').text(time));
+ console.log('what time is it? ', time);
+ console.log('The id is ', socket.id);
+ console.log('the message is ', msg);
+
     $('#messages').prepend($('<li>').text(msg));
     $('#messages').prepend($('<li><small>').text(socket.id));
+    $('#messages').prepend($('<li>').text(time));
 
 
   });

@@ -3,7 +3,10 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const server = require('http').createServer(app);
+const moment = require ('moment');
 var io = require('socket.io')(server);
+
+var time = moment().format('h:mm a')
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -26,8 +29,11 @@ io.on('connection', (socket) => {
 
 
 	socket.on('chat message', (msg) => {
-		console.log(socket.id, 'says', msg);
-		io.emit('chat message', msg, socket.id);
+		console.log(socket.id, 'says', msg, 'at', time);
+		// io.emit('chat message', msg, socket.id, time);
+	
+		io.emit('chat message', msg, time);
+
 	  });
 
 
