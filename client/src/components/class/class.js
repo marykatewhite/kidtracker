@@ -10,17 +10,11 @@ function classList({ teacherName }) {
 				<div className='card horizontal transparent z-depth-0'>
 					<div className='card-stacked center'>
 						<div className='card-content teachername'>
-							<p>{teacherName}</p>
-						</div>
-						<div className='card-action'>
-							<a class='waves-effect waves-light btn center'>
-								<i class='material-icons right'>send</i>Send class
-							</a>
+							<h1>{teacherName}</h1>
 						</div>
 					</div>
 				</div>
 			</div>
-			;
 		</>
 	);
 }
