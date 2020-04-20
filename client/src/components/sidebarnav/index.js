@@ -9,17 +9,29 @@ function SideNav() {
 	return (
 		<>
 			<div className='sideNavContainer'>
-				<nav className='nav transparent z-depth-0'>
-					<ClassList teacherName='Mr.Butt' />
-					<a
-						href='#'
-						data-target='slide-out'
-						class='sidenav-trigger show-on-large right'>
-						<i class='material-icons'>send</i>
-					</a>
-				</nav>
+				<header className='nav transparent z-depth-0'>
+					<div className='row'>
+						<div className='col s6'>
+							<ClassList teacherName='Mr.Smith' />
+						</div>
+					</div>
+
+					<div className='col s12'>
+						<a
+							href='#'
+							data-target='slide-out'
+							class='waves-effect waves-light btn sidenav-trigger show-on-large transparent'>
+							<i class='material-icons right'>send</i>Send class
+						</a>
+					</div>
+				</header>
 				<ul id='slide-out' class='sidenav'>
 					<Chat />
+					<ul>
+						<li>
+							<a className='sidenav-close'>Close Chat Window</a>
+						</li>
+					</ul>
 				</ul>
 			</div>
 		</>
