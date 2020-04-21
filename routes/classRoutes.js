@@ -5,10 +5,13 @@ const childController = require("../controllers/childController");
 
 router
   .route("/")
+  .get(teacherController.findById)
+
+  .route("/dashboard")
   .get(childController.findAll)
   .get(teacherController.findAll)
   .get(childController.findById)
-  .get(teacher.findById)
+  .get(teacherController.findById)
   .put(childController.update);
 
 module.exports = router;
