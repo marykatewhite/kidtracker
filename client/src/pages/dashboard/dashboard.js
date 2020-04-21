@@ -1,27 +1,23 @@
 import React, { Component } from "react";
+
 import Navbar from "../../components/navbar/navbar";
 import ClassList from "../../components/class/class";
 import StudentList from "../../components/studentlist/studentList";
-import Login from "../../components/login/login";
-import Chat from "../../components/chat/chat";
+import SideNav from "../../components/sidebarnav";
+import { Sidenav } from "materialize-css";
+import "./style.css";
 
 function DashboardPage() {
 	return (
 		<>
 			<Navbar />
-
 			<div className='row'>
 				<div className='col s12 '>
-					<ClassList teacherName='Mr.Butt' />
+					<SideNav />
 				</div>
 				<div className='row'>
-					<div className='col s12 '>
+					<div className='col s12 studentList '>
 						<StudentList />
-					</div>
-					<div className=''>
-						<div className='col s12 '>
-							<Chat teacherName="Mr.Butt" />
-						</div>
 					</div>
 				</div>
 			</div>

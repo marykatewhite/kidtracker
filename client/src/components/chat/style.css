@@ -1,5 +1,19 @@
-chattydiv {
+.chattydiv {
+	color: #336633;
+}
 
-    color: #ffffff;
-    
+.card-title {
+	color: #336633;
+}
+
+.messages {
+	color: #336633;
+}
+
+.user-view {
+	color: #336633;
+}
+
+#nm {
+	color: #336633;
 }
