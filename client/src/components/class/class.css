@@ -1,11 +1,5 @@
-#classComponent {
-	padding: 40px;
-	color: #ffffff;
-	border: #ffffcc;
-	border-width: 5px;
-}
-
 .teachername {
 	color: white;
 	font-size: 36px;
+	font-family: "Pacifico", cursive;
 }

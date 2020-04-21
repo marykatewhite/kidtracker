@@ -1,7 +1,8 @@
 const express = require("express");
 const path = require("path");
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 const app = express();
+
 const server = require('http').createServer(app);
 // const moment = require ("moment");
 var io = require('socket.io')(server);
@@ -11,6 +12,8 @@ const UserDetail = require('./models/teacherModel');
 
 
 // var time = moment().format('h:mm a')
+
+
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -42,26 +45,20 @@ app.get("*", function (req, res) {
 	res.sendFile(path.join(__dirname, "./client/public/index.html"));
 });
 
+io.on("connection", (socket) => {
+	console.log(socket.id, "is connected");
 
-io.on('connection', (socket) => {
-	console.log(socket.id, 'is connected');
-
-	socket.on('disconnect', () => {
-		console.log('A user disconnected');
+	socket.on("disconnect", () => {
+		console.log("A user disconnected");
 	});
 
-
-	socket.on('chat message', (msg) => {
-		console.log(socket.id, 'says', msg, 'at', time);
+	socket.on("chat message", (msg) => {
+		console.log(socket.id, "says", msg, "at", time);
 		// io.emit('chat message', msg, socket.id, time);
-	
-		io.emit('chat message', msg, time);
 
-	  });
-
-
+		io.emit("chat message", msg, time);
+	});
 });
-
 
 server.listen(PORT, function () {
 	console.log(`🌎 ==> API server now on port ${PORT}!`);
