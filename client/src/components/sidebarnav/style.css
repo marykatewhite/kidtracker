@@ -8,3 +8,9 @@
 	border: thick;
 	border-color: #336633;
 }
+
+.chatContainer {
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+}

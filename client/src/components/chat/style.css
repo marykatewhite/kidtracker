@@ -17,3 +17,7 @@
 #nm {
 	color: #336633;
 }
+
+.chatContainer {
+	position: relative;
+}

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import Navbar from "../../components/navbar/navbar";
-import ClassList from "../../components/class/class";
 import StudentList from "../../components/studentlist/studentList";
 import SideNav from "../../components/sidebarnav";
 import { Sidenav } from "materialize-css";
