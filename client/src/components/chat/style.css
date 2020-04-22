@@ -1,5 +1,6 @@
 .chattydiv {
 	color: #336633;
+	font-family: "Pacifico", cursive;
 }
 
 .card-title {
@@ -20,4 +21,28 @@
 
 .chatContainer {
 	position: relative;
+}
+.chatportal {
+	position: fixed;
+	bottom: 0;
+	width: 75%;
+	height: 12rem;
+	color: #336633;
+}
+.messages-header {
+	color: white;
+}
+.user-view {
+	background-color: #336633;
+}
+
+.sendButton {
+	color: #336633;
+	background-color: #ffffcc;
+	border: 2px solid #4caf50;
+	font-family: "Pacifico", cursive;
+}
+
+.input-field {
+	color: #336633;
 }

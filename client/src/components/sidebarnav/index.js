@@ -29,27 +29,31 @@ function SideNav() {
 					<li>
 						<div className='user-view'>
 							<a href='#name'>
-								<span className='green-text name'>First Name Last Name</span>
+								<p className='text-name'>First Name Last Name</p>
 							</a>
 							<a href='#email'>
-								<span className='green-text email'>email@email.com</span>
+								<p className='text-email'>email@email.com</p>
 							</a>
 						</div>
 					</li>
 					<ul className='collapsible'>
 						<li>
-							<div className='collapsible-header'>
-								<i className='material-icons'>assignment_ind</i>Teachers
+							<div className='collapsible-header center'>
+								<div className='dropdownHeader'>
+									<p>
+										Teachers <i class='material-icons right'>arrow_downward</i>
+									</p>
+								</div>
 							</div>
 							{/* <!-- we need a for loop to cycle through all possible teachers in the database to populate this dropdown --> */}
 							<ul className='collapsible-body transparent z-depth-0'>
-								<li>
+								<li className='text-name'>
 									<a>Teacher 1</a>
 								</li>
-								<li>
+								<li className='text-name'>
 									<a>Teacher 2</a>
 								</li>
-								<li>
+								<li className='text-name'>
 									<a>Teacher 3</a>
 								</li>
 							</ul>
