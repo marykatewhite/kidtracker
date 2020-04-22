@@ -37,7 +37,9 @@
 			});
 		</script>
 		<script>
-			$(".dropdown-trigger").dropdown();
+			$(document).ready(function () {
+				$(".collapsible").collapsible();
+			});
 		</script>
 
 		<title>Roll Call</title>
@@ -55,9 +57,6 @@
 		<script src="/socket.io/socket.io.js"></script>
 		<script>
 			var socket = io();
-		</script>
-		<script>
-			$(".dropdown-trigger").dropdown();
 		</script>
 		<!-- <script>
 		$(function () {

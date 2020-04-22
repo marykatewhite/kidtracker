@@ -5,10 +5,10 @@ import "./studentList.css";
 import Student from "../../schema/students";
 
 function StudentList({ studentName }) {
-	const Student = [Student];
-	const students = Student.map(function (value, index) {
-		console.log(students);
-	});
+	// const Student = [Student];
+	// const students = Student.map(() => (value, index) {
+	// 	console.log(students);
+	// });
 	return (
 		<>
 			<ul className='collection with-header'>
@@ -50,11 +50,11 @@ function StudentList({ studentName }) {
 			</ul>
 			{/* Modal Layout */}
 			<div id='modal1' className='modal'>
-				<div class='modal-content'>
+				<div className='modal-content'>
 					<h4>Student Name</h4>
 					<p>Student Info here</p>
 				</div>
-				<div class='modal-footer'>
+				<div className='modal-footer'>
 					<a
 						href='#!'
 						className='modal-close waves-effect waves-green btn-flat'>

@@ -36,47 +36,26 @@ function SideNav() {
 							</a>
 						</div>
 					</li>
-					<a
-						class='dropdown-trigger btn center'
-						href='#dropdown'
-						data-target='dropdown1'>
-						Drop Me!
-					</a>
-					<ul id='dropdown1' class='dropdown-content'>
-						<option value='' disabled selected>
-							Select a teacher:
-						</option>
+					<ul className='collapsible'>
 						<li>
-							<option value='1'>Teacher 1</option>
-						</li>
-						<li class='divider' tabindex='-1'></li>
-						<li>
-							<option value='2'>Teacher 2</option>
-						</li>
-						<li>
-							<option value='3'>Teacher 3</option>
-						</li>
-						<li>
-							<a href='#!'>
-								<i class='material-icons'>cloud</i>five
-							</a>
+							<div className='collapsible-header'>
+								<i className='material-icons'>assignment_ind</i>Teachers
+							</div>
+							{/* <!-- we need a for loop to cycle through all possible teachers in the database to populate this dropdown --> */}
+							<ul className='collapsible-body transparent z-depth-0'>
+								<li>
+									<a>Teacher 1</a>
+								</li>
+								<li>
+									<a>Teacher 2</a>
+								</li>
+								<li>
+									<a>Teacher 3</a>
+								</li>
+							</ul>
 						</li>
 					</ul>
-
-					<div className='input-field col s12'>
-						<select>
-							{/* <!-- we need a for loop to cycle through all possible teachers in the database to populate this dropdown --> */}
-							<ul id='dropdown1' class='dropdown-content'></ul>
-							<option value='' disabled selected>
-								Select a teacher:
-							</option>
-							<option value='1'>Teacher 1</option>
-							<option value='2'>Teacher 2</option>
-							<option value='3'>Teacher 3</option>
-						</select>
-					</div>
-
-					<div class='chatContainer' id='chatwindow'>
+					<div className='chatContainer' id='chatwindow'>
 						<div className='col s12'>
 							<Chat />
 						</div>
