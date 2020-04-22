@@ -5,8 +5,9 @@ import "./studentList.css";
 import Student from "../../schema/students";
 
 function StudentList({ studentName }) {
+	const Student = [Student];
 	const students = Student.map(function (value, index) {
-		// console.log([]);
+		console.log(students);
 	});
 	return (
 		<>

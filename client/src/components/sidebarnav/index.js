@@ -38,7 +38,7 @@ function SideNav() {
 					</li>
 					<a
 						class='dropdown-trigger btn center'
-						href='#'
+						href='#dropdown'
 						data-target='dropdown1'>
 						Drop Me!
 					</a>
