@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const app = express();
 const server = require("http").createServer(app);
 const moment = require("moment");
@@ -20,10 +20,10 @@ app.get("*", function (req, res) {
 });
 
 io.on("connection", (socket) => {
-	console.log(socket.id, "is connected");
+	console.log(socket.id, " is connected");
 
 	socket.on("disconnect", () => {
-		console.log("A user disconnected");
+		console.log(socket.id, " disconnected");
 	});
 
 	socket.on("chat message", (msg) => {
