@@ -21,7 +21,7 @@ function SideNav() {
 							href='#'
 							data-target='slide-out'
 							className='waves-effect waves-light btn sidenav-trigger show-on-large transparent'>
-							<i className='material-icons right'>send</i>Send className
+							<i className='material-icons right'>send</i>Send Class
 						</a>
 					</div>
 				</header>

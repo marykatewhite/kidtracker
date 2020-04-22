@@ -1,14 +1,10 @@
 import React from "react";
-
+import StudentProfile from "../../components/studentprofile/studentProfile";
 import "./studentList.css";
 
 import Student from "../../schema/students";
 
 function StudentList({ studentName }) {
-	// const Student = [Student];
-	// const students = Student.map(() => (value, index) {
-	// 	console.log(students);
-	// });
 	return (
 		<>
 			<ul className='collection with-header'>
@@ -49,22 +45,20 @@ function StudentList({ studentName }) {
 				</li>
 			</ul>
 			{/* Modal Layout */}
+
 			<div id='modal1' className='modal'>
 				<div className='modal-content'>
-					<h4>Student Name</h4>
-					<p>Student Info here</p>
-				</div>
-				<div className='modal-footer'>
-					<a
-						href='#!'
-						className='modal-close waves-effect waves-green btn-flat'>
-						close
-					</a>
-					<a
-						href='#!'
-						className='modal-close waves-effect waves-green btn-flat'>
-						Send Student
-					</a>
+					<StudentProfile />
+
+					<div id='model 1' className='modal-footer transparent z-depth-0'>
+						<a href='#!' className='modal-close sendButton'>
+							close
+						</a>
+						&nbsp; &nbsp; &nbsp;
+						<a href='#!' data-target='slide-out' className='sendButton'>
+							Send Student
+						</a>
+					</div>
 				</div>
 			</div>
 		</>

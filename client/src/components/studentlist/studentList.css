@@ -16,11 +16,19 @@ i.icon-creamyyy {
 
 .studentname {
 	color: white;
-	font-family: cursive;
+	font-family: "Pacifico", cursive;
 	font-size: 18px;
 }
 
 .studentheader {
 	color: white;
-	font-family: cursive;
+	font-family: "Pacifico", cursive;
+}
+
+#modal1 {
+	background-color: #ffffcc;
+}
+
+.modal-footer {
+	background-color: #336633;
 }
