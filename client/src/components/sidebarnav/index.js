@@ -1,5 +1,4 @@
 import React from "react";
-import M from "materialize-css/dist/js/materialize";
 import "materialize-css/dist/css/materialize.min.css";
 import Chat from "../../components/chat/chat";
 import ClassList from "../../components/class/class";
