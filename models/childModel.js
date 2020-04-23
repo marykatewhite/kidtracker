@@ -20,11 +20,13 @@ const ChildSchema = new Schema({
   },
 
   parentfirstname: {
+    type: String,
     trim: true,
     required: "Parent First Name is Required"
   },
 
   parentlasttname: {
+    type: String,
     trim: true,
     required: "Parent Last Name is Required"
   },
