@@ -7,10 +7,22 @@ function Chat({ teacherName }) {
 			<div className='row'>
 				<div className='card transparent z-depth-0'>
 					<div className='card-content white-text'>
-						<span className='card-title' id='userName'></span>
-						<div className=' messages-header card transparent z-depth-0'>
+						<span className='card-title' id='userName'>
+							{teacherName}
+						</span>
+
+
+  <ul id='teacherlist' className='dropdown-content'>
+							<li><a href="#!">one</a></li>
+							
+						</ul>
+
+
+
+						<div className='card transparent z-depth-0'>
 							<div className='card-content white-text'>
-								<span className='card-title center'>Messages</span>
+								<span className='card-title'>Messages</span>
+
 								<ul id='messages' className='messages'></ul>
 							</div>
 						</div>

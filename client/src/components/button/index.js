@@ -8,7 +8,7 @@ function SendButton() {
 	return (
 		<>
 			<div className='buttoncontainer'>
-				<a href='#' data-target='slide-out' class='sidenav-trigger'>
+				<a href='#' data-target='slide-out' className='sidenav-trigger'>
 					<i className='material-icons right'>send</i>Send Class
 				</a>
 			</div>
