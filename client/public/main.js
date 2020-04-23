@@ -1,10 +1,29 @@
+// This function sets the user's name on login
+
+
+// $(function () {
+//   var socket = io();
+//   $('loginbutton').submit(function (e) {
+//     e.preventDefault();
+//     socket.emit('set user name', name);
+//     return false;
+//   });
+
+//   socket.on('set user name', function (name) {
+
+//     console.log('I am in main.js!', name);
+
+
+
+//   });
+// });
 
 
 
 
-// This function adds messages to chat
+  // This function adds messages to chat
 
-$(function () {
+  $(function () {
   var socket = io();
   $('form').submit(function (e) {
     e.preventDefault(); // prevents page reloading

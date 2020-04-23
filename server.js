@@ -78,7 +78,7 @@ io.on("connection", (socket) => {
 
 	socket.on("set user name", (data) => {
 
-		console.log('Here is the data ', data);
+		console.log('Here is your name from Server: ', data);
 	});
 
 

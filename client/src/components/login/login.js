@@ -9,10 +9,17 @@ class Login extends Component {
 
 
 	setUser = () => {
-
-		// socket.emit('set user name', $('#email').val());
-
+		let name = document.getElementById('email').value;
+		this.setState({ username: name });
+		console.log('Oh, your name is ', name);
 	}
+
+
+
+	componentDidUpdate =() => {
+		console.log('username state is: ', this.state.username);
+	}
+
 
 
 	render() {
@@ -34,9 +41,11 @@ class Login extends Component {
 				<div className='row'>
 					<div className='col s6'>
 						<button
+							id="loginbutton"
 							className='btn waves-effect waves-light'
 							type='submit'
 							name='action'
+							onClick={this.setUser}
 						>
 							Submit
 					</button>

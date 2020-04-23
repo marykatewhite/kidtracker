@@ -27,7 +27,7 @@ function Chat({ teacherName }) {
 							</div>
 						</div>
 						<div className='chatContainer'>
-							<form action=''>
+							<form id="chattyform" action=''>
 								<div className='chatportal'>
 									<input
 										id='m'
