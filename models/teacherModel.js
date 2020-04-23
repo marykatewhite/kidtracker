@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+const passportLocalMongoose = require('passport-local-mongoose');
 
 const TeacherSchema = new Schema({
   caregiverlastname: {
@@ -15,6 +16,7 @@ const TeacherSchema = new Schema({
   },
 
   caregiverlocation: {
+    type: Number,
     trim: true,
   },
 
@@ -32,6 +34,9 @@ const TeacherSchema = new Schema({
 
 });
 
+
+TeacherSchema.plugin(passportLocalMongoose);
 const Teacher = mongoose.model("Teacher", TeacherSchema);
+
 
 module.exports = Teacher;

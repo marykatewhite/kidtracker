@@ -1,14 +1,17 @@
 const express = require("express");
 const path = require("path");
+var http = require("http");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
 const server = require("http").createServer(app);
 const moment = require("moment");
 var io = require("socket.io")(server);
+var passport = require("passport");
 const mongoose = require("mongoose");
 const passportLocalMongoose = require("passport-local-mongoose");
-const UserDetail = require("./models/teacherModel");
+// const UserDetail = require('./models/teacherModel');
+const routes = require("./routes/classRoutes.js");
 
 var time = moment().format("h:mm a");
 
@@ -27,6 +30,11 @@ mongoose.connect("mongodb://localhost/kidtracker", {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
 });
+const Schema = mongoose.Schema;
+const UserDetail = new Schema({
+	username: String,
+	password: String,
+});
 UserDetail.plugin(passportLocalMongoose);
 const UserDetails = mongoose.model("userInfo", UserDetail, "userInfo");
 /* PASSPORT LOCAL AUTHENTICATION */
@@ -35,7 +43,7 @@ passport.serializeUser(UserDetails.serializeUser());
 passport.deserializeUser(UserDetails.deserializeUser());
 
 // Send every request to the React app
-require("./routes/classRoutes.js")(app);
+app.use(routes);
 
 // Define any API routes before this runs
 app.get("*", function (req, res) {
