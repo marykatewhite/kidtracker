@@ -8,3 +8,22 @@
 	border: thick;
 	border-color: #336633;
 }
+
+.collapsible-body {
+	color: #336633;
+	background: #336633;
+}
+.text-email {
+	color: #ffffcc;
+}
+.text-name {
+	color: #ffffcc;
+}
+.collapsible-header {
+	text-align: center;
+}
+.dropdownHeader {
+	color: #336633;
+	font-family: "Pacifico", cursive;
+	justify-content: center;
+}

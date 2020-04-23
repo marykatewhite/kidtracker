@@ -1,17 +1,16 @@
 const path = require("path");
 const router = require("express").Router();
-const teacherController = require("../controllers/teacherController");
-const childController = require("../controllers/childController");
+const teacherController = require("../controllers/teacherController.js");
+const childController = require("../controllers/childController.js");
 
-router
-  .route("/")
-  .get(teacherController.findById)
+router.route("/teachers").get(teacherController.findAll);
 
-  .route("/dashboard")
-  .get(childController.findAll)
-  .get(teacherController.findAll)
-  .get(childController.findById)
-  .get(teacherController.findById)
-  .put(childController.update);
+router.route("/teachers/:id").get(teacherController.findById);
+
+router.route("/students").get(childController.findAll);
+
+router.route("/students/:id").get(childController.findById);
+
+router.route("/students/:id/:caregiver").put(childController.update);
 
 module.exports = router;

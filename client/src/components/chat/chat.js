@@ -31,19 +31,23 @@ function Chat({ teacherName }) {
 								<ul id='messages' className='messages'></ul>
 							</div>
 						</div>
-						<form action=''>
-							<span id='nm'>Mr.Smith's class</span>
-							<input
-								id='m'
-								type='text'
-								placeholder='Enter message here'
-								autocomplete='off'
-								className='input-field green-text'
-							/>
-							<button type='submit' className='btn waves-effect waves grey'>
-								Send
-							</button>
-						</form>
+						<div className='chatContainer'>
+							<form action=''>
+								<div className='chatportal'>
+									<input
+										id='m'
+										type='text'
+										placeholder='Enter message here'
+										autoComplete='off'
+										className='input-field'
+									/>
+									<button type='submit' className='sendButton'>
+										Send
+									</button>
+								</div>
+								<div />
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -20,18 +20,50 @@ function SideNav() {
 						<a
 							href='#'
 							data-target='slide-out'
-							class='waves-effect waves-light btn sidenav-trigger show-on-large transparent'>
-							<i class='material-icons right'>send</i>Send class
+							className='waves-effect waves-light btn sidenav-trigger show-on-large transparent'>
+							<i className='material-icons right'>send</i>Send Class
 						</a>
 					</div>
 				</header>
-				<ul id='slide-out' class='sidenav'>
-					<Chat />
-					<ul>
+				<ul id='slide-out' className='sidenav'>
+					<li>
+						<div className='user-view'>
+							<a href='#name'>
+								<p className='text-name'>First Name Last Name</p>
+							</a>
+							<a href='#email'>
+								<p className='text-email'>email@email.com</p>
+							</a>
+						</div>
+					</li>
+					<ul className='collapsible'>
 						<li>
-							<a className='sidenav-close'>Close Chat Window</a>
+							<div className='collapsible-header center'>
+								<div className='dropdownHeader'>
+									<p>
+										Teachers <i class='material-icons right'>arrow_downward</i>
+									</p>
+								</div>
+							</div>
+							{/* <!-- we need a for loop to cycle through all possible teachers in the database to populate this dropdown --> */}
+							<ul className='collapsible-body transparent z-depth-0'>
+								<li className='text-name'>
+									<a>Teacher 1</a>
+								</li>
+								<li className='text-name'>
+									<a>Teacher 2</a>
+								</li>
+								<li className='text-name'>
+									<a>Teacher 3</a>
+								</li>
+							</ul>
 						</li>
 					</ul>
+					<div className='chatContainer' id='chatwindow'>
+						<div className='col s12'>
+							<Chat />
+						</div>
+					</div>
 				</ul>
 			</div>
 		</>
