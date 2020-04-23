@@ -1,3 +1,15 @@
+## DATABASE INFO
+
+ds149593.mlab.com:49593/heroku_4jmmhth3
+ remote database is named heroku_4jmmhth3
+
+username: haizizong1289kidtracker
+password: Cl4r3nc369420
+
+To connect using the mongo shell:
+mongo ds149593.mlab.com:49593/heroku_4jmmhth3 -u haizizong1289kidtracker -p Cl4r3nc369420
+
+
 # UPDATE 4/6
 
 ## Layout
