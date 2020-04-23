@@ -6,31 +6,31 @@ function Chat({ teacherName }) {
 		<div className='chattydiv'>
 			<div className='row'>
 				<div className='card transparent z-depth-0'>
-					<div class='card-content white-text'>
-						<span class='card-title' id='userName'>
-							{teacherName}
-						</span>
-
-						<div className='card transparent z-depth-0'>
-							<div class='card-content white-text'>
-								<span class='card-title'>Messages</span>
-
+					<div className='card-content white-text'>
+						<span className='card-title' id='userName'></span>
+						<div className=' messages-header card transparent z-depth-0'>
+							<div className='card-content white-text'>
+								<span className='card-title center'>Messages</span>
 								<ul id='messages' className='messages'></ul>
 							</div>
 						</div>
-						<form action=''>
-							<span id='nm'>Mr.Smith's class</span>
-							<input
-								id='m'
-								type='text'
-								placeholder='Enter message here'
-								autocomplete='off'
-								className='input-field green-text'
-							/>
-							<button type='submit' className='btn waves-effect waves grey'>
-								Send
-							</button>
-						</form>
+						<div className='chatContainer'>
+							<form action=''>
+								<div className='chatportal'>
+									<input
+										id='m'
+										type='text'
+										placeholder='Enter message here'
+										autoComplete='off'
+										className='input-field'
+									/>
+									<button type='submit' className='sendButton'>
+										Send
+									</button>
+								</div>
+								<div />
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
