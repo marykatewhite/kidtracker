@@ -1,6 +1,9 @@
 
 
 
+
+// This function adds messages to chat
+
 $(function () {
   var socket = io();
   $('form').submit(function (e) {
@@ -12,9 +15,9 @@ $(function () {
 
   socket.on('chat message', function (msg, time) {
 
- console.log('what time is it? ', time);
- console.log('The id is ', socket.id);
- console.log('the message is ', msg);
+    console.log('what time is it? ', time);
+    console.log('The id is ', socket.id);
+    console.log('the message is ', msg);
 
     $('#messages').prepend($('<li>').text(msg));
     $('#messages').prepend($('<li><small>').text(socket.id));
