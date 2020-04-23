@@ -15,7 +15,7 @@ const TeacherSchema = new Schema({
   },
 
   caregiverlocation: {
-    trim: true,
+    // trim: true,
   },
 
   caregiveremail: {

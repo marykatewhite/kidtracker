@@ -1,5 +1,31 @@
 
+// This function generates teacher names for teacher list dropdown
 
+$(function () {
+  $('#teacherlistbutton').onClick(function (e) {
+    e.preventDefault(); // prevents page reloading
+    socket.emit('chat message', $('#m').val());
+    $('#m').val('');
+    return false;
+  });
+
+  socket.on('chat message', function (msg, time) {
+
+ console.log('what time is it? ', time);
+ console.log('The id is ', socket.id);
+ console.log('the message is ', msg);
+
+    $('#messages').prepend($('<li>').text(msg));
+    $('#messages').prepend($('<li><small>').text(socket.id));
+    $('#messages').prepend($('<li>').text(time));
+
+
+  });
+
+});
+
+
+// This function adds messages to chat
 
 $(function () {
   var socket = io();
