@@ -6,8 +6,6 @@ const app = express();
 
 var http = require("http");
 
-const PORT = process.env.PORT || 3001;
-const app = express();
 
 const server = require("http").createServer(app);
 const moment = require("moment");

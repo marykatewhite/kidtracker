@@ -6,27 +6,22 @@ function Chat({ teacherName }) {
 		<div className='chattydiv'>
 			<div className='row'>
 				<div className='card transparent z-depth-0'>
-					<div class='card-content white-text'>
-						<span class='card-title' id='userName'>
+					<div className='card-content white-text'>
+						<span className='card-title' id='userName'>
 							{teacherName}
 						</span>
 
-  <a id="teacherlistbutton" class='dropdown-trigger btn' href='#' data-target='teacherlist'>To...</a>
 
-  <ul id='teacherlist' class='dropdown-content'>
+  <ul id='teacherlist' className='dropdown-content'>
 							<li><a href="#!">one</a></li>
-							<li><a href="#!">two</a></li>
-							<li class="divider" tabindex="-1"></li>
-							<li><a href="#!">three</a></li>
-							<li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-							<li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+							
 						</ul>
 
 
 
 						<div className='card transparent z-depth-0'>
-							<div class='card-content white-text'>
-								<span class='card-title'>Messages</span>
+							<div className='card-content white-text'>
+								<span className='card-title'>Messages</span>
 
 								<ul id='messages' className='messages'></ul>
 							</div>
