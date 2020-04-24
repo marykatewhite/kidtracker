@@ -12,9 +12,9 @@ function Chat({ teacherName }) {
 						</span>
 
 
-  <ul id='teacherlist' className='dropdown-content'>
+						<ul id='teacherlist' className='dropdown-content'>
 							<li><a href="#!">one</a></li>
-							
+
 						</ul>
 
 
@@ -27,7 +27,7 @@ function Chat({ teacherName }) {
 							</div>
 						</div>
 						<div className='chatContainer'>
-							<form action=''>
+							<form id="chattyform" action=''>
 								<div className='chatportal'>
 									<input
 										id='m'

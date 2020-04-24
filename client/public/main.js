@@ -1,13 +1,11 @@
 
 
-
-
 // This function adds messages to chat
 
 $(function () {
   var socket = io();
   $('form').submit(function (e) {
-    e.preventDefault(); // prevents page reloading
+    e.preventDefault(); 
     socket.emit('chat message', $('#m').val());
     $('#m').val('');
     return false;

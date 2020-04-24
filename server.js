@@ -4,8 +4,6 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 
-var http = require("http");
-
 
 const server = require("http").createServer(app);
 const moment = require("moment");
@@ -54,18 +52,37 @@ app.get("*", function (req, res) {
 });
 
 io.on("connection", (socket) => {
-	console.log(socket.id, "is connected");
+
+	let username = "john";
+
+	const user = {
+		id: socket.id,
+		name: username
+	};
+
+	console.log(user.name, 'is connected as ID:', user.id);
+
+
+
+
 
 	socket.on("disconnect", () => {
-		console.log("A user disconnected");
+		console.log(socket.id, " disconnected");
 	});
 
 	socket.on("chat message", (msg) => {
 		console.log(socket.id, "says", msg, "at", time);
-		// io.emit('chat message', msg, socket.id, time);
-
 		io.emit("chat message", msg, time);
 	});
+
+
+	socket.on("set user name", (data) => {
+
+		console.log('Here is your name from Server: ', data);
+	});
+
+
+
 });
 
 server.listen(PORT, function () {
