@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../../components/navbar/navbar";
 import StudentList from "../../components/studentlist/studentList";
 import SideNav from "../../components/sidebarnav";
-import { Sidenav } from "materialize-css";
+// import { Sidenav } from "materialize-css";
 import "./style.css";
 
 function DashboardPage() {

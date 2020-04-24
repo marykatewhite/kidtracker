@@ -12,9 +12,9 @@ function Chat({ teacherName }) {
 						</span>
 
 
-  <ul id='teacherlist' className='dropdown-content'>
+						<ul id='teacherlist' className='dropdown-content'>
 							<li><a href="#!">one</a></li>
-							
+
 						</ul>
 
 

@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import "./login.css";
+import io from 'socket.io-client';
+
+
 
 class Login extends Component {
 
@@ -12,20 +15,23 @@ class Login extends Component {
 		let name = document.getElementById('email').value;
 		this.setState({ username: name });
 		console.log('Oh, your name is ', name);
+
 	}
 
 
 
-	componentDidUpdate =() => {
+	componentDidUpdate = () => {
 		console.log('username state is: ', this.state.username);
 	}
+
+
 
 
 
 	render() {
 
 		return (
-			<form className='col s12 offset-s3'>
+			<form className='col s12 offset-s3' >
 				<div className='row'>
 					<div className='input-field col s6'>
 						<label for='email'>Email</label>
