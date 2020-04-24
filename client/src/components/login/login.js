@@ -15,7 +15,6 @@ class Login extends Component {
 	}
 
 	setInputValue(property, val) {
-		val = val.trim();
 		this.setState({
 			[property]: val
 		})
@@ -59,7 +58,7 @@ class Login extends Component {
 			}
 		}
 		catch(e) {
-			console.log(error)
+			console.log('error')
 		}
 	}
 
@@ -93,17 +92,22 @@ class Login extends Component {
 				<div className='row'>
 					<div className='input-field col s6'>
 						<label for='email'>Email</label>
-						<input id='email' type='email' className='validate' />
+						<input 
+						id='email'
+						type='email' 
+						className='validate'
+						onChange={ (val) => this.setInputValue('username', val) } 
+						/>
 					</div>
 				</div>
 				<div className='row'>
 					<div className='input-field col s6'>
 						<label for='password'>Password</label>
 						<input 
-						id='password' 
+						id='password'
 						type='password' 
 						className='validate' 
-						onChange = { (e) => this.props.onChange(e.target.value) }
+						onChange={ (val) => this.setInputValue('password', val) }
 						/>
 					</div>
 				</div>
@@ -114,7 +118,7 @@ class Login extends Component {
 							className='btn waves-effect waves-light'
 							type='submit'
 							name='action'
-							onClick={ () => this.props.onClick() }
+							onClick={ () => this.doLogin() }
 						>
 							Submit
 					</button>
