@@ -1,5 +1,6 @@
 [
 	{
+		"username": "MrSims",
 		"caregiverlastname": "Sims",
 		"caregiverfirstname": "John",
 		"caregiverlocation": "Red Room",
@@ -7,14 +8,16 @@
 		"caregiverpassword": "pswd123"
 	},
 	{
-	    "caregiverlastname": "White",
+		"username": "MsUltra",
+		"caregiverlastname": "White",
 	    "caregiverfirstname": "Mary Kate",
 		"caregiverlocation": "Yellow Room",
 		"caregiveremail": "mkUltra@email.com",
 		"caregiverpassword": "pswd456"
 	},
 	{
-	    "caregiverlastname": "Zsadov",
+		"username": "ZachSadMan",
+		"caregiverlastname": "Zsadov",
 	    "caregiverfirstname": "Zach",
 		"caregiverlocation": "Green Room",
 		"caregiveremail": "zach@email.com",
