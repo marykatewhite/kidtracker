@@ -4,8 +4,8 @@
 
 $(function () {
   var socket = io();
-  $('form').submit(function (e) {
-    e.preventDefault(); 
+  $('#chattyform').submit(function (e) {
+    e.preventDefault();
     socket.emit('chat message', $('#m').val());
     $('#m').val('');
     return false;
@@ -26,6 +26,30 @@ $(function () {
 
 });
 
+
+
+
+
+$(function () {
+  var socket = io();
+  $('#loggyform').submit(function (e) {
+    e.preventDefault();
+    socket.emit('set user name', $('#email').val());
+    $('#email').val('');
+    return false;
+  });
+
+  socket.on('set user name', function (name) {
+
+    console.log('The user name in main.js is ', name);
+
+
+    // $('#messages').prepend($('<li>').text(time));
+
+
+  });
+
+});
 
 
 

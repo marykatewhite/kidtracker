@@ -1,28 +1,41 @@
 import React, { Component } from "react";
 import "./login.css";
-import io from 'socket.io-client';
-
 
 
 class Login extends Component {
 
 	state = {
-		username: ""
+		currentuser: ""
 	}
 
 
 	setUser = () => {
 		let name = document.getElementById('email').value;
-		this.setState({ username: name });
+		// this.setState({ username: name });
 		console.log('Oh, your name is ', name);
+		let username;
+
+		if (name === "josi3006@hotmail.com") {
+			username = "Mr. Sims";
+			this.setState({ currentuser: "Mr. Sims" });
+
+		} else if
+			(name === "mkUltra@email.com") {
+			username = "Miss White";
+			this.setState({ currentuser: "Miss White" });
+		} else {
+			username = "Mr. Sadovszky";
+			this.setState({ currentuser: "Mr. Sadovszky" });
+		}
+
+
+		window.localStorage.setItem('username', username);
 
 	}
 
 
 
-	componentDidUpdate = () => {
-		console.log('username state is: ', this.state.username);
-	}
+
 
 
 
@@ -31,7 +44,7 @@ class Login extends Component {
 	render() {
 
 		return (
-			<form className='col s12 offset-s3' >
+			<form className='col s12 offset-s3' id="loggyform">
 				<div className='row'>
 					<div className='input-field col s6'>
 						<label for='email'>Email</label>
