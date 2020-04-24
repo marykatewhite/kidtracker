@@ -6,7 +6,7 @@
       "parentfirstname": "Allison",
       "parentlastname": "Asimov",
       "parentphone": "804-567-0001",
-      "caregiver": "Sims",
+      "caregiveremail": "josi3006@hotmail.com",
       "carenotes": "Gluten Free"
 
     },
@@ -17,7 +17,7 @@
         "parentfirstname": "Barb",
         "parentlastname": "Becket",
         "parentphone": "804-567-0002",
-        "caregiver": "White",
+        "caregiveremail": "mkUltra@email.com",
         "carenotes": "Egg Allergy"
     },
     {
@@ -27,7 +27,7 @@
         "parentfirstname": "Carl",
         "parentlastname": "Chekhov",
         "parentphone": "804-567-0003",
-        "caregiver": "Zsadov",
+        "caregiveremail": "zach@email.com",
         "carenotes": "Asthma"
     },
     {
@@ -37,7 +37,7 @@
         "parentfirstname": "Debra",
         "parentlastname": "Dickinson",
         "parentphone": "804-567-0004",
-        "caregiver": "Sims",
+        "caregiveremail": "josi3006@hotmail.com",
         "carenotes": "Oppositional Defiant Disorder"
     },
     {
@@ -47,7 +47,7 @@
         "parentfirstname": "Elizabeth",
         "parentlastname": "Emerson",
         "parentphone": "804-567-0005",
-        "caregiver": "White",
+        "caregiveremail": "mkUltra@email.com",
         "carenotes": "Frequent Sunscreen"
     },
     {
@@ -57,7 +57,7 @@
         "parentfirstname": "Frances",
         "parentlastname": "Faulkner",
         "parentphone": "804-567-0006",
-        "caregiver": "Zsadov",
+        "caregiveremail": "zach@email.com",
         "carenotes": "No Pork"
     },
     {
@@ -67,7 +67,7 @@
         "parentfirstname": "Gary",
         "parentlastname": "Galt",
         "parentphone": "804-567-0007",
-        "caregiver": "Sims",
+        "caregiveremail": "josi3006@hotmail.com",
         "carenotes": ""
     },
     {
@@ -77,7 +77,7 @@
         "parentfirstname": "Harry",
         "parentlastname": "Hugo",
         "parentphone": "804-567-0008",
-        "caregiver": "White",
+        "caregiveremail": "mkUltra@email.com",
         "carenotes": ""
     },
     {
@@ -87,7 +87,7 @@
         "parentfirstname": "Ida",
         "parentlastname": "Irving",
         "parentphone": "804-567-0009",
-        "caregiver": "Zsadov",
+        "caregiveremail": "zach@email.com",
         "carenotes": ""
     },
     {
@@ -97,7 +97,7 @@
         "parentfirstname": "Jill",
         "parentlastname": "Joyce",
         "parentphone": "804-567-0010",
-        "caregiver": "Sims",
+        "caregiveremail": "josi3006@hotmail.com",
         "carenotes": ""
     },
     {
@@ -107,7 +107,7 @@
         "parentfirstname": "Karen",
         "parentlastname": "Kipling",
         "parentphone": "804-567-0011",
-        "caregiver": "White",
+        "caregiveremail": "mkUltra@email.com",
         "carenotes": ""
     },
     {
@@ -117,7 +117,7 @@
         "parentfirstname": "Laura",
         "parentlastname": "Lovecraft",
         "parentphone": "804-567-0012",
-        "caregiver": "Zsadov",
+        "caregiveremail": "zach@email.com",
         "carenotes": ""
     },
     {
@@ -127,7 +127,7 @@
         "parentfirstname": "Mary",
         "parentlastname": "Milton",
         "parentphone": "804-567-0013",
-        "caregiver": "Sims",
+        "caregiveremail": "josi3006@hotmail.com",
         "carenotes": ""
     },
     {
@@ -137,7 +137,7 @@
         "parentfirstname": "Nancy",
         "parentlastname": "Nietzsche",
         "parentphone": "804-567-0014",
-        "caregiver": "White",
+        "caregiveremail": "mkUltra@email.com",
         "carenotes": ""
     },
     {
@@ -147,7 +147,7 @@
         "parentfirstname": "Orson",
         "parentlastname": "Orwell",
         "parentphone": "804-567-0015",
-        "caregiver": "Zsadov",
+        "caregiveremail": "zach@email.com",
         "carenotes": ""
     },
     {
@@ -157,7 +157,7 @@
         "parentfirstname": "Paula",
         "parentlastname": "Poe",
         "parentphone": "804-567-0016",
-        "caregiver": "Sims",
+        "caregiveremail": "josi3006@hotmail.com",
         "carenotes": ""
     },
     {
@@ -167,7 +167,7 @@
         "parentfirstname": "Quincy",
         "parentlastname": "Quintillian",
         "parentphone": "804-567-0017",
-        "caregiver": "White",
+        "caregiveremail": "mkUltra@email.com",
         "carenotes": ""
     },
     {
@@ -177,7 +177,7 @@
         "parentfirstname": "Rhonda",
         "parentlastname": "Ruskin",
         "parentphone": "804-567-0018",
-        "caregiver": "Zsadov",
+        "caregiveremail": "zach@email.com",
         "carenotes": ""
     },
     {
@@ -187,7 +187,7 @@
         "parentfirstname": "Sara",
         "parentlastname": "Stevenson",
         "parentphone": "804-567-0019",
-        "caregiver": "Sims",
+        "caregiveremail": "josi3006@hotmail.com",
         "carenotes": ""
     },
     {
@@ -197,7 +197,7 @@
         "parentfirstname": "Tom",
         "parentlastname": "Tennyson",
         "parentphone": "804-567-0020",
-        "caregiver": "White",
+        "caregiveremail": "mkUltra@email.com",
         "carenotes": ""
     },
     {
@@ -207,7 +207,7 @@
         "parentfirstname": "Ursula",
         "parentlastname": "Updike",
         "parentphone": "804-567-0021",
-        "caregiver": "Zsadov",
+        "caregiveremail": "zach@email.com",
         "carenotes": ""
     },
     {
@@ -217,7 +217,7 @@
         "parentfirstname": "Vera",
         "parentlastname": "Verne",
         "parentphone": "804-567-0022",
-        "caregiver": "Sims",
+        "caregiveremail": "josi3006@hotmail.com",
         "carenotes": ""
     },
     {
@@ -227,7 +227,7 @@
         "parentfirstname": "Will",
         "parentlastname": "Wilde",
         "parentphone": "804-567-0023",
-        "caregiver": "White",
+        "caregiveremail": "mkUltra@email.com",
         "carenotes": ""
     },
     {
@@ -237,7 +237,7 @@
         "parentfirstname": "Xavier",
         "parentlastname": "Xavier",
         "parentphone": "804-567-0024",
-        "caregiver": "Zsadov",
+        "caregiveremail": "zach@email.com",
         "carenotes": ""
     },
     {
@@ -247,7 +247,7 @@
         "parentfirstname": "Yvette",
         "parentlastname": "Yeats",
         "parentphone": "804-567-0025",
-        "caregiver": "Sims",
+        "caregiveremail": "josi3006@hotmail.com",
         "carenotes": ""
     },
     {
@@ -257,7 +257,7 @@
         "parentfirstname": "Zach",
         "parentlastname": "Zebrowski",
         "parentphone": "804-567-0026",
-        "caregiver": "White",
+        "caregiveremail": "mkUltra@email.com",
         "carenotes": ""
     }
    
