@@ -3,6 +3,8 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
+const cors = require("cors");
+
 const server = require("http").createServer(app);
 const moment = require("moment");
 var io = require("socket.io")(server);
@@ -40,7 +42,7 @@ passport.deserializeUser(UserDetails.deserializeUser());
 
 // Send every request to the React app
 app.use(routes);
-
+app.use(cors());
 // Define any API routes before this runs
 app.get("*", function (req, res) {
 	res.sendFile(path.join(__dirname, "./client/public/index.html"));

@@ -1,64 +1,41 @@
-
-
 // This function adds messages to chat
 
 $(function () {
-  var socket = io();
-  $('#chattyform').submit(function (e) {
-    e.preventDefault();
-    socket.emit('chat message', $('#m').val());
-    $('#m').val('');
-    return false;
-  });
+	var socket = io();
+	$("#chattyform").submit(function (e) {
+		e.preventDefault();
+		socket.emit("chat message", $("#m").val());
+		$("#m").val("");
+		return false;
+	});
 
-  socket.on('chat message', function (msg, time) {
+	socket.on("chat message", function (msg, time) {
+		console.log("what time is it? ", time);
+		console.log("The id is ", socket.id);
+		console.log("the message is ", msg);
 
-    console.log('what time is it? ', time);
-    console.log('The id is ', socket.id);
-    console.log('the message is ', msg);
-
-    $('#messages').prepend($('<li>').text(msg));
-    $('#messages').prepend($('<li><small>').text(socket.id));
-    $('#messages').prepend($('<li>').text(time));
-
-
-  });
-
+		$("#messages").prepend($("<li>").text(msg));
+		$("#messages").prepend($("<li><small>").text(socket.id));
+		$("#messages").prepend($("<li>").text(time));
+	});
 });
-
-
-
-
 
 $(function () {
-  var socket = io();
-  let currentuser = window.localStorage.getItem('username')
-  $('#loggyform').submit(function (e) {
-    e.preventDefault();
-    console.log('In main.js from local-top of funtion', currentuser)
-    socket.emit('set user name', currentuser);
+	var socket = io();
+	let currentuser = window.localStorage.getItem("username");
+	$("#loggyform").submit(function (e) {
+		e.preventDefault();
+		console.log("In main.js from local-top of funtion", currentuser);
+		socket.emit("set user name", currentuser);
 
-    $('#email').val('');
-    return false;
-  });
+		$("#email").val("");
+		return false;
+	});
 
-  socket.on('set user name', function (name) {
-
-    console.log('In main.js from server?? ', name);
-
-
-  });
-
+	socket.on("set user name", function (name) {
+		console.log("In main.js from server?? ", name);
+	});
 });
-
-
-
-
-
-
-
-
-
 
 // const chatForm = document.getElementById('chat-form');
 // const chatMessages = document.querySelector('.chat-messages');
