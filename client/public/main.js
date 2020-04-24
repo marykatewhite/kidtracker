@@ -32,19 +32,19 @@ $(function () {
 
 $(function () {
   var socket = io();
+  let currentuser = window.localStorage.getItem('username')
   $('#loggyform').submit(function (e) {
     e.preventDefault();
-    socket.emit('set user name', $('#email').val());
+    console.log('In main.js from local-top of funtion', currentuser)
+    socket.emit('set user name', currentuser);
+
     $('#email').val('');
     return false;
   });
 
   socket.on('set user name', function (name) {
 
-    console.log('The user name in main.js is ', name);
-
-
-    // $('#messages').prepend($('<li>').text(time));
+    console.log('In main.js from server?? ', name);
 
 
   });

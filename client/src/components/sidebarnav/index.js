@@ -25,7 +25,8 @@ class SideNav extends Component {
 		let username = window.localStorage.getItem('username');
 		this.setState({ currentuser: username});
 
-		console.log('in sidenav ', username);
+		console.log('in sidenav index from local', username);
+		console.log('in sidenav index from state', this.state.currentuser);
 	}
 
 

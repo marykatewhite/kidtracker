@@ -78,7 +78,6 @@ io.on("connection", (socket) => {							// Registers the connection
 
 
 	socket.on("set user name", (name) => {
-
 		console.log(socket.id, ' is working as ', name);
 		io.emit("set user name", name);
 	});

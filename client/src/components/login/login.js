@@ -11,8 +11,6 @@ class Login extends Component {
 
 	setUser = () => {
 		let name = document.getElementById('email').value;
-		// this.setState({ username: name });
-		console.log('Oh, your name is ', name);
 		let username;
 
 		if (name === "josi3006@hotmail.com") {
@@ -31,6 +29,7 @@ class Login extends Component {
 
 		window.localStorage.setItem('username', username);
 
+		console.log('On login from if-else: ', username);
 	}
 
 
