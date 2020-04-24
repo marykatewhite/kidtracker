@@ -6,16 +6,28 @@ import "materialize-css/dist/css/materialize.min.css";
 import Chat from "../../components/chat/chat";
 import ClassList from "../../components/class/class";
 import "./style.css";
-import teachers from "../../teachers.json"
+import teachers from "../../teachers.json";
 
 
 
 
 class SideNav extends Component {
 
+
 	state = {
-		data: []
+		teacherlist: [],
+		currentuser: ""
 	};
+
+	
+	componentDidMount = () => {
+
+		let username = window.localStorage.getItem('username');
+		this.setState({ currentuser: username});
+
+		console.log('in sidenav index from local', username);
+		console.log('in sidenav index from state', this.state.currentuser);
+	}
 
 
 
@@ -24,17 +36,17 @@ class SideNav extends Component {
 		let listArr = [];
 
 		for (var i = 0; i < teachers.length; i++) {
-			var lastname = teachers[i].caregiverlastname;
+			var lastname = (teachers[i].caregiverfirstname + ' ' + teachers[i].caregiverlastname);
 			listArr.push(lastname);
 		}
-		this.setState({ data: listArr });
+		this.setState({ teacherlist: listArr });
 	}
 
 
 	render() {
 
 
-		const items = this.state.data.map(teacher => {
+		const items = this.state.teacherlist.map(teacher => {
 			return <li key={teacher}><a> {teacher}</a></li>;
 		});
 
@@ -42,11 +54,12 @@ class SideNav extends Component {
 		return (
 
 			<>
+
 				<div className='sideNavContainer'>
 					<header className='nav transparent z-depth-0'>
 						<div className='row'>
 							<div className='col s6'>
-								<ClassList teacherName='Mr.Smith' />
+								<ClassList teacherName={ this.state.currentuser } />
 							</div>
 						</div>
 
@@ -61,13 +74,14 @@ class SideNav extends Component {
 					</header>
 					<ul id='slide-out' className='sidenav'>
 						<li>
-							<div className='user-view'>
-								<a href='#name'>
+							<div className='user-view' id="chatheader">
+								<p className='text-name'>{ this.state.currentuser }</p>
+								{/* <a href='#name'>
 									<p className='text-name'>First Name Last Name</p>
 								</a>
 								<a href='#email'>
 									<p className='text-email'>email@email.com</p>
-								</a>
+								</a> */}
 							</div>
 						</li>
 						<ul className='collapsible'>

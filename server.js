@@ -51,39 +51,40 @@ app.get("*", function (req, res) {
 	res.sendFile(path.join(__dirname, "./client/public/index.html"));
 });
 
-io.on("connection", (socket) => {
-
-	let username = "john";
-
-	const user = {
-		id: socket.id,
-		name: username
-	};
-
-	console.log(user.name, 'is connected as ID:', user.id);
 
 
+// All socket.io/chat functionality follows...
+
+io.on("connection", (socket) => {							// Registers the connection
+
+	// let username = "john";
+
+	// const user = {
+	// 	id: socket.id,
+	// 	name: username
+	// };
+
+	// console.log(user.name, 'is connected as ID:', user.id);
 
 
-
-	socket.on("disconnect", () => {
+	socket.on("disconnect", () => {							// Registers the disconnect
 		console.log(socket.id, " disconnected");
 	});
 
-	socket.on("chat message", (msg) => {
+	socket.on("chat message", (msg) => {					// Accepts a message from sender on front end
 		console.log(socket.id, "says", msg, "at", time);
-		io.emit("chat message", msg, time);
+		io.emit("chat message", msg, time);					// Sends message back to all users front end
 	});
 
 
-	socket.on("set user name", (data) => {
-
-		console.log('Here is your name from Server: ', data);
+	socket.on("set user name", (name) => {
+		console.log(socket.id, ' is working as ', name);
+		io.emit("set user name", name);
 	});
 
+});															// END of socket.io/chat functionality
 
 
-});
 
 server.listen(PORT, function () {
 	console.log(`🌎 ==> API server now on port ${PORT}!`);
