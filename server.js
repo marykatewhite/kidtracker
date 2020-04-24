@@ -3,8 +3,6 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-
-
 const server = require("http").createServer(app);
 const moment = require("moment");
 var io = require("socket.io")(server);
@@ -20,9 +18,6 @@ var time = moment().format("h:mm a");
 if (process.env.NODE_ENV === "production") {
 	app.use(express.static("client/build"));
 }
-
-// PASSPORT STUFF
-// https://www.sitepoint.com/local-authentication-using-passport-node-js/
 
 // Creating express app and configuring middleware needed for authentication
 /* MONGOOSE SETUP */
@@ -51,11 +46,10 @@ app.get("*", function (req, res) {
 	res.sendFile(path.join(__dirname, "./client/public/index.html"));
 });
 
-
-
 // All socket.io/chat functionality follows...
 
-io.on("connection", (socket) => {							// Registers the connection
+io.on("connection", (socket) => {
+	// Registers the connection
 
 	// let username = "john";
 
@@ -66,25 +60,22 @@ io.on("connection", (socket) => {							// Registers the connection
 
 	// console.log(user.name, 'is connected as ID:', user.id);
 
-
-	socket.on("disconnect", () => {							// Registers the disconnect
+	socket.on("disconnect", () => {
+		// Registers the disconnect
 		console.log(socket.id, " disconnected");
 	});
 
-	socket.on("chat message", (msg) => {					// Accepts a message from sender on front end
+	socket.on("chat message", (msg) => {
+		// Accepts a message from sender on front end
 		console.log(socket.id, "says", msg, "at", time);
-		io.emit("chat message", msg, time);					// Sends message back to all users front end
+		io.emit("chat message", msg, time); // Sends message back to all users front end
 	});
-
 
 	socket.on("set user name", (name) => {
-		console.log(socket.id, ' is working as ', name);
+		console.log(socket.id, " is working as ", name);
 		io.emit("set user name", name);
 	});
-
-});															// END of socket.io/chat functionality
-
-
+}); // END of socket.io/chat functionality
 
 server.listen(PORT, function () {
 	console.log(`🌎 ==> API server now on port ${PORT}!`);
