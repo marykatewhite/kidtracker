@@ -4,8 +4,8 @@
 
 $(function () {
   var socket = io();
-  $('form').submit(function (e) {
-    e.preventDefault(); 
+  $('#chattyform').submit(function (e) {
+    e.preventDefault();
     socket.emit('chat message', $('#m').val());
     $('#m').val('');
     return false;
@@ -26,6 +26,30 @@ $(function () {
 
 });
 
+
+
+
+
+$(function () {
+  var socket = io();
+  let currentuser = window.localStorage.getItem('username')
+  $('#loggyform').submit(function (e) {
+    e.preventDefault();
+    console.log('In main.js from local-top of funtion', currentuser)
+    socket.emit('set user name', currentuser);
+
+    $('#email').val('');
+    return false;
+  });
+
+  socket.on('set user name', function (name) {
+
+    console.log('In main.js from server?? ', name);
+
+
+  });
+
+});
 
 
 

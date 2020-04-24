@@ -16,8 +16,8 @@
 		"caregiverpassword": "$2b$09$8B7zTunr.6iRtpb.nIXju.3G2SJjJ0IPLCo988DxygHvNtN4Grw/W"
 	},
 	{
-		"username": "ZachSadMan",
-		"caregiverlastname": "Zsadov",
+"username": "ZachSadMan",
+	    "caregiverlastname": "Sadovszky",
 	    "caregiverfirstname": "Zach",
 		"caregiverlocation": "Green Room",
 		"caregiveremail": "zach@email.com",

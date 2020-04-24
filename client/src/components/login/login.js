@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./login.css";
+
 import io from 'socket.io-client';
 import UserStore from "../../stores/UserStore";
 
@@ -12,6 +13,7 @@ class Login extends Component {
 			username: '',
 			password: ''
 		}
+
 	}
 
 	setInputValue(property, val) {
@@ -19,6 +21,7 @@ class Login extends Component {
 			[property]: val
 		})
 	}
+
 
 	resetForm() {
 		this.setState({
@@ -63,32 +66,11 @@ class Login extends Component {
 	}
 
 
-	// state = {
-	// 	username: ""
-	// }
-
-
-	// setUser = () => {
-	// 	let name = document.getElementById('email').value;
-	// 	this.setState({ username: name });
-	// 	console.log('Oh, your name is ', name);
-
-	// }
-
-
-
-	// componentDidUpdate = () => {
-	// 	console.log('username state is: ', this.state.username);
-	// }
-
-
-
-
 
 	render() {
 
 		return (
-			<form className='col s12 offset-s3' >
+			<form className='col s12 offset-s3' id="loggyform">
 				<div className='row'>
 					<div className='input-field col s6'>
 						<label for='email'>Email</label>
