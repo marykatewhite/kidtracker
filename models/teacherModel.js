@@ -3,6 +3,13 @@ const Schema = mongoose.Schema;
 const passportLocalMongoose = require('passport-local-mongoose');
 
 const TeacherSchema = new Schema({
+
+  username: {
+    type: String,
+    trim: true, 
+    required: "Username is required"
+  },
+  
   caregiverlastname: {
     type: String,
     trim: true,
