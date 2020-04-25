@@ -1,7 +1,7 @@
-const path = require("path");
 const router = require("express").Router();
 const teacherController = require("../controllers/teacherController.js");
 const childController = require("../controllers/childController.js");
+
 
 router.route("/teachers").get(teacherController.findAll);
 
