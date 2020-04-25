@@ -1,9 +1,21 @@
 import React from "react";
 
-const styles = {};
+import "./class.css";
 
-function Class() {
-    return ();
+function classList({ teacherName }) {
+	return (
+		<>
+			<div className='col s12 '>
+				<div className='card horizontal transparent z-depth-0'>
+					<div className='card-stacked center'>
+						<div className='card-content teachername'>
+							<h1>{teacherName}</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</>
+	);
 }
 
-export default Class;
+export default classList;

@@ -1,21 +1,27 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import DashboardPage from "../src/pages/dashboard/dashboard";
+import UserStore from "./stores/UserStore.js";
+import LoginPage from "./pages/loginpage/login";
+import { observer } from "mobx-react";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+import "./App.css";
+import "materialize-css/dist/css/materialize.min.css";
+
+const App = () => {
+  return (
+    <>
+      <Router>
+        <div>
+          <div className="contentdiv">
+            <Route exact path="/" component={LoginPage} />
+            <Route exact path="/dashboard" component={DashboardPage} />
+          </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+      </Router>
+    </>
+  );
+};
 
 export default App;

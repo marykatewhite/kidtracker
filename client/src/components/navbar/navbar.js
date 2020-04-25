@@ -1,17 +1,16 @@
 import React from "react";
-
-const styles = {};
+import "./navbar.css";
 
 function Navbar() {
-  return (
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo center">
-          Logo
-        </a>
-      </div>
-    </nav>
-  );
+	return (
+		<nav className='nav transparent z-depth-0'>
+			<img
+				src='/rollcalllogohorizontal-min.png'
+				alt='Roll Call'
+				className='navlogo'
+			/>
+		</nav>
+	);
 }
 
 export default Navbar;

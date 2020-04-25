@@ -1,3 +1,15 @@
+## DATABASE INFO
+
+ds149593.mlab.com:49593/heroku_4jmmhth3
+ remote database is named heroku_4jmmhth3
+
+username: haizizong1289kidtracker
+password: Cl4r3nc369420
+
+To connect using the mongo shell:
+mongo ds149593.mlab.com:49593/heroku_4jmmhth3 -u haizizong1289kidtracker -p Cl4r3nc369420
+
+
 # UPDATE 4/6
 
 ## Layout
@@ -80,3 +92,28 @@ We also established that we will need the following api routes:
 3. GET all data for a particular student
 4. PUT a new status and/or location into student database
 5. POST changes to transfer log table
+
+
+## Project Requirements
+Must use ReactJS in some way (even if minimal)
+Must use a Node and Express Web Server
+Must be backed by a MySQL or MongoDB Database with a Sequelize or Mongoose ORM  
+Must have both GET and POST routes for retrieving and adding new data
+Must be deployed using Heroku (with Data)
+Must utilize at least two libraries, packages, or technologies that we haven't discussed
+Must allow for or involve the authentication of users in some way
+Must have a polished frontend/UI 
+Must have folder structure that meets MVC Paradigm
+Must meet good quality coding standards (indentation, scoping, naming)
+Must not expose sensitive API key information on the server
+Must use ReactJS in some way (even if minimal)
+Must use a Node and Express Web Server
+Must be backed by a MySQL or MongoDB Database with a Sequelize or Mongoose ORM  
+Must have both GET and POST routes for retrieving and adding new data
+Must be deployed using Heroku (with Data)
+Must utilize at least two libraries, packages, or technologies that we haven't discussed
+Must allow for or involve the authentication of users in some way
+Must have a polished frontend/UI 
+Must have folder structure that meets MVC Paradigm
+Must meet good quality coding standards (indentation, scoping, naming)
+Must not expose sensitive API key information on the server
