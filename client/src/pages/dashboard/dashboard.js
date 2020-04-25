@@ -24,7 +24,7 @@ const Dashboard = () => {
       .database()
       .ref(`/teachers/${teacherID}/students/`)
       .once("value")
-      .then((snapshot) => {
+      .then(snapshot => {
         if (!snapshot.val()) {
           // default "dummy"
           addStudent("Zach Sadovszky");
@@ -34,7 +34,7 @@ const Dashboard = () => {
       });
   };
 
-  const addStudent = (studentName) => {
+  const addStudent = studentName => {
     const updates = {};
     const newStudentId = Date.now();
     updates[`teachers/${teacherID}/students/${newStudentId}/id`] = newStudentId;
@@ -58,22 +58,30 @@ const Dashboard = () => {
   return (
     <>
       <Navbar />
-      <div className="row">
+      {/* <div className="row">
         <div className="col s12 ">
           <SideNav />
         </div>
+      </div> */}
+      <div className="container">
         <div className="row">
-          <section>
-            <h5>Add Student</h5>
-            <input
-              onChange={(event) => setNewStudentName(event.currentTarget.value)}
-              value={newStudentName}
-            />
-            <button onClick={() => addStudent(newStudentName)}>
-              Add Student
-            </button>
-          </section>
-
+          <div className="col s12">
+            <section>
+              <h5 className="newStudentHeader">Add a Student</h5>
+              <input
+                onChange={event => setNewStudentName(event.currentTarget.value)}
+                value={newStudentName}
+                id="newStudentInput"
+              />
+              <a className="waves-effect waves-light btn addStudent" onClick={() => addStudent(newStudentName)}>
+                Add Student<i class="material-icons right">add</i>
+              </a>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="row">
           <div className="col s12 studentList ">
             {loading ? (
               <div>Loading...</div>
