@@ -1,3 +1,12 @@
 .StudentList {
-	margin-top: 20px;
+  margin-top: 20px;
+}
+
+.newStudentHeader {
+  color: #ffffcc;
+  font-family: "Pacifico", cursive;
+}
+
+#newStudentInput {
+	color: #ffffcc;
 }
