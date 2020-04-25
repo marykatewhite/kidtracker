@@ -42,7 +42,7 @@ passport.deserializeUser(UserDetails.deserializeUser());
 
 // Send every request to the React app
 app.use(routes);
-app.use(cors());
+// app.use(cors());
 // Define any API routes before this runs
 app.get("*", function (req, res) {
 	res.sendFile(path.join(__dirname, "./client/public/index.html"));

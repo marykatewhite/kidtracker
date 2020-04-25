@@ -1,24 +1,19 @@
 import React, { Component } from "react";
 import "./login.css";
 
-
 class Login extends Component {
-
 	state = {
-		currentuser: ""
-	}
-
+		currentuser: "",
+	};
 
 	setUser = () => {
-		let name = document.getElementById('email').value;
+		let name = document.getElementById("email").value;
 		let username;
 
 		if (name === "josi3006@hotmail.com") {
 			username = "Mr. Sims";
 			this.setState({ currentuser: "Mr. Sims" });
-
-		} else if
-			(name === "mkUltra@email.com") {
+		} else if (name === "mkUltra@email.com") {
 			username = "Miss White";
 			this.setState({ currentuser: "Miss White" });
 		} else {
@@ -26,24 +21,14 @@ class Login extends Component {
 			this.setState({ currentuser: "Mr. Sadovszky" });
 		}
 
+		window.localStorage.setItem("username", username);
 
-		window.localStorage.setItem('username', username);
-
-		console.log('On login from if-else: ', username);
-	}
-
-
-
-
-
-
-
-
+		console.log("On login from if-else: ", username);
+	};
 
 	render() {
-
 		return (
-			<form className='col s12 offset-s3' id="loggyform">
+			<form className='col s12 offset-s3' id='loggyform'>
 				<div className='row'>
 					<div className='input-field col s6'>
 						<label for='email'>Email</label>
@@ -59,20 +44,18 @@ class Login extends Component {
 				<div className='row'>
 					<div className='col s6'>
 						<button
-							id="loginbutton"
+							id='loginbutton'
 							className='btn waves-effect waves-light'
 							type='submit'
 							name='action'
-							onClick={this.setUser}
-						>
+							onClick={this.setUser}>
 							Submit
-					</button>
+						</button>
 					</div>
 				</div>
 			</form>
 		);
 	}
-
 }
 
 export default Login;
