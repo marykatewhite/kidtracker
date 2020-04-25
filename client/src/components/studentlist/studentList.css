@@ -16,7 +16,7 @@ i.icon-creamyyy {
 
 .studentname {
   color: white;
-  font-family: "Pacifico", cursive;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
 
@@ -35,7 +35,7 @@ i.icon-creamyyy {
 
 .classHeader {
   color: #ffffcc;
-  font-family: "Pacifico", cursive;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 .select-box {
